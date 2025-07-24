@@ -1,0 +1,117 @@
+/* Font, resets and base */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header/Navigation */
+header {
+  background-color: #202124;
+  padding: 10px 20px;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-container img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.logo-container h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  font-weight: 500;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+nav ul li a:hover {
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Main cards */
+main {
+  max-width: 960px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card {
+  background-color: #242526;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  transform: translateY(-2px);
+}
+.card-content {
+  padding: 24px;
+}
+.card-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* Button-style link */
+.btn-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ff6f61;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn-link:hover {
+  background-color: #ff8575;
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 24px 0;
+  background-color: #202124;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
